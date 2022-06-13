@@ -30,6 +30,7 @@ allprojects {
 
 compileJava {
     options.compilerArgs << '-Xlint:deprecation'
+    options.compilerArgs << '-Xlint:unchecked'
 }
 
     configurations {
