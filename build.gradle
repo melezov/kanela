@@ -28,6 +28,10 @@ buildscript {
 allprojects {
     apply plugin: 'java'
 
+compileJava {
+    options.compilerArgs << '-Xlint:deprecation'
+}
+
     configurations {
         provided
         agent

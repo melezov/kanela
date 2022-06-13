@@ -211,4 +211,4 @@ classes {
     dependsOn createBuildInfoFile
 }
 
-test.reports.html.enabled = false
+test.reports.html.required = false
