@@ -48,7 +48,7 @@ public class KanelaConfiguration {
     InstrumentationRegistryConfig instrumentationRegistryConfig;
     OldGarbageCollectorConfig oldGarbageCollectorConfig;
     Boolean showBanner;
-    HashMap extraParams;
+    HashMap<String, Object> extraParams;
     Level logLevel;
     @Getter(AccessLevel.PRIVATE)
     Config config;
@@ -74,7 +74,7 @@ public class KanelaConfiguration {
         this.config = config;
         this.debugMode = getDebugMode(config);
         this.showBanner = getShowBanner(config);
-        this.extraParams = new HashMap();
+        this.extraParams = new HashMap<>();
         this.dump = new DumpConfig(config);
         this.circuitBreakerConfig = new CircuitBreakerConfig(config);
         this.instrumentationRegistryConfig = new InstrumentationRegistryConfig(config);
